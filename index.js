@@ -30,7 +30,7 @@ function create() {
         blendMode: 'ADD'
     });
 
-    fairy = this.physics.add.image(400, 100, 'light');
+    fairy = this.physics.add.image(200, 100, 'light');
     fairy.setVelocity(100, 200);
     fairy.setBounce(1, 1);
     fairy.setCollideWorldBounds(true);

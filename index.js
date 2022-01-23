@@ -27,6 +27,7 @@ function create() {
     emitter = particles.createEmitter({
         speed: 100,
         scale: { start: 1, end: 0 },
+        tint: {start: 0, end: 16777214, random: true},
         blendMode: 'ADD'
     });
 

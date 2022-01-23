@@ -2,7 +2,7 @@ let fairy,
     emitter,
     config = {
         type: Phaser.AUTO,
-        width: 400,
+        width: window.innerWidth/1.2,
         height: 400,
         physics: {
             default: 'arcade',

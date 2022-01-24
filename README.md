@@ -22,3 +22,9 @@ the `create-xdc.sh` script helps you to do that:
 ```sh
 ./create-xdc.sh
 ```
+
+## Creating Custom Builds of Phaser
+
+This project uses a custom build of Phaser including only the features
+needed, it helps to keep your app size small, for more details check the
+[Phaser documentation](https://photonstorm.github.io/phaser3-docs/index.html#toc10__anchor).

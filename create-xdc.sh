@@ -14,7 +14,7 @@ case "$1" in
 esac
 
 rm "$PACKAGE_NAME.xdc" 2> /dev/null
-zip -9 --recurse-paths "$PACKAGE_NAME.xdc" manifest.toml index.html js assets
+zip -9 --recurse-paths "$PACKAGE_NAME.xdc" manifest.toml index.html js css assets
 
 echo "success, archive contents:"
 unzip -l "$PACKAGE_NAME.xdc"

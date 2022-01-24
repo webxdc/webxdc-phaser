@@ -2,14 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link rel="stylesheet" href="css/index.css">
+
         <script src="webxdc.js"></script>
         <script src="js/phaser.min.js"></script>
     </head>
-    <body style="text-align:center;">
-        <button onclick="sendColor(0xff5050);">RED</button>
-        <button onclick="sendColor(0x50ff50);">GREEN</button>
-        <button onclick="sendColor(0x5050ff);">BLUE</button>
-        <br>
+    <body>
+        <div id="buttons">
+            <button onclick="sendColor(0xff5050);">RED</button>
+            <button onclick="sendColor(0x50ff50);">GREEN</button>
+            <button onclick="sendColor(0x5050ff);">BLUE</button>
+        </div>
 
         <script src="js/index.js"></script>
     </body>

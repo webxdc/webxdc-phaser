@@ -3,7 +3,7 @@ let fairy,
     config = {
         type: Phaser.AUTO,
         scale: {
-            mode: Phaser.Scale.FIT,
+            mode: Phaser.Scale.RESIZE,
             width: 600,
             height: 800,
         },

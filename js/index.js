@@ -44,10 +44,11 @@ function create() {
     window.webxdc.setUpdateListener((update) => {
         setColor(update.payload);
     });
-    const updates = window.webxdc.getAllUpdates();
-    if (updates.length > 0) {
-        setColor(updates[updates.length - 1].payload);
-    }
+    window.webxdc.getAllUpdates().then((updates) => {
+        if (updates.length > 0) {
+            setColor(updates[updates.length - 1].payload);
+        }
+    });
 }
 
 function setColor(color) {

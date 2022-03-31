@@ -42,19 +42,12 @@ function create() {
     emitter.startFollow(fairy);
 
     window.webxdc.setUpdateListener((update) => {
-        setColor(update.payload);
-    });
-    window.webxdc.getAllUpdates().then((updates) => {
-        if (updates.length > 0) {
-            setColor(updates[updates.length - 1].payload);
+        if (update.serial == update.max_serial) {
+            fairy.setTint(update.payload);
+            emitter.setTint(update.payload);
         }
-    });
+    }, 0);
 }
-
-function setColor(color) {
-    fairy.setTint(color);
-    emitter.setTint(color);
-};
 
 function sendColor(color) {
     window.webxdc.sendUpdate({payload: color});
